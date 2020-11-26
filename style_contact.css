@@ -129,6 +129,12 @@ section{
 .item__img{
     margin-left: 35px;
 }
+
+.special{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 /*--------------------*/
 
 

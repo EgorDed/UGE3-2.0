@@ -1,0 +1,250 @@
+/* Обнуление стилей */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/*--------------------*/
+
+
+/* Section */
+section {
+    margin-left: 295px;
+}
+
+/*--------------------*/
+
+/* header */
+.header {
+    padding-top: 45px;
+}
+
+.title {
+    font-family: 'Arvo', sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+
+    text-align: center;
+}
+
+.subtitle {
+    font-family: 'Arvo', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+
+    text-align: center;
+
+    margin: 40px 0 46px 0;
+}
+
+.header__list {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+.header__list__item {
+    line-height: normal;
+
+    margin: 40px 75px;
+
+    position: relative;
+}
+
+.header__list__item:before {
+    content: "";
+
+    background: url(img/list_arrow.png);
+    background-repeat: no-repeat;
+
+    width: 11px;
+    height: 15px;
+
+    position: absolute;
+
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+}
+
+/*--------------------*/
+
+
+/* Numbers */
+.numbers {
+    font-family: 'Arvo', sans-serif;
+}
+
+.numbers__items {
+    display: flex;
+
+    justify-content: space-around;
+
+    flex-wrap: wrap;
+
+    margin-top: 35px;
+}
+
+.number__item {
+    width: 205px;
+    height: 230px;
+
+    background: #9da3ba;
+
+    margin-bottom: 55px;
+
+    border-radius: 0 23px;
+
+    color: #fff;
+
+    position: relative;
+}
+
+.number__item h1 {
+    font-size: 56px;
+
+    text-align: center;
+
+    margin: 44px auto 0;
+}
+
+.number__item p {
+    font-size: 13px;
+
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+
+    margin: 50px auto 0;
+}
+
+.number__item:before {
+    content: "";
+
+    background-image: url(img/numbers_icon.png);
+
+    width: 12px;
+    height: 13px;
+
+    position: absolute;
+    top: 111px;
+    left: 97px;
+}
+
+/*--------------------*/
+
+
+/* Offers */
+.offers {
+    margin-bottom: 40px;
+}
+
+.offers__item {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.offer {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 306px;
+    height: 292px;
+
+    border-bottom: 2px #e8e9ed solid;
+    border-left: 2px #e8e9ed solid;
+}
+
+.offer:nth-child(1) {
+
+    border-left: 0px;
+}
+
+.of7,
+.of8,
+.of9 {
+     border-bottom: 0px;
+}
+
+
+
+.offer__img {
+    width: auto;
+    height: auto;
+}
+
+.offer__text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+
+    text-align: center;
+
+    margin-top: 30px;
+}
+
+.offer__subtext {
+    color: #707070;
+
+    margin-top: 20px;
+}
+
+/*--------------------*/
