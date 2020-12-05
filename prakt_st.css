@@ -161,3 +161,36 @@ section {
     left: 0;
 }
 
+
+@media (max-width: 901px){
+    section{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 360px){
+    .prakt__info{
+        width: 100%;
+    }
+}
+
+@media (max-width: 414px){
+    .prakt__info{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

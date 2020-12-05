@@ -1,5 +1,5 @@
 /*  MENU */
-.menu{
+.menu {
     width: 295px;
     height: 100%;
 
@@ -10,24 +10,24 @@
     z-index: 1;
 }
 
-.logo{
+.logo {
     margin: 45px 40px 110px 40px;
 }
 
-.list{
+.list {
     text-transform: uppercase;
     font-size: 18px;
 }
 
-.list__item{
+.list__item {
     display: block;
     color: #000;
 
-    padding: 15px 35px 10px ;
+    padding: 15px 35px 10px;
 }
 
 
-.list__item:hover{
+.list__item:hover {
     text-decoration: none;
     color: #fff;
     background: #353b50;
@@ -37,7 +37,7 @@
     padding-left: 27px;
 }
 
-.active{
+.active {
     background: #353b50;
 
     border-left: #10acdd solid 8px;
@@ -47,7 +47,29 @@
     color: #fff;
 }
 
-.ooo{
+.menu__adres {
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 220px;
+
+}
+
+.menu__adres p {
+
+    line-height: 1.2;
+    font-size: 12px;
+
+    position: absolute;
+    left: 35px;
+    bottom: 80px;
+}
+
+
+
+.ooo {
     font-family: 'Play', sans-serif;
     font-size: 12px;
 
@@ -55,4 +77,308 @@
     left: 35px;
     bottom: 40px;
 }
+
 /*--------------------*/
+
+/*  Burger */
+
+
+.burger__item {
+    width: 30px;
+    height: 3px;
+    background: #10acdd;
+
+    position: absolute;
+    top: 0;
+}
+
+.burger__item:first-child {
+    top: -8px;
+}
+
+.burger__item:last-child {
+    top: 8px;
+}
+
+.burger__inner {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+
+
+.burger {
+    z-index: 10000;
+
+    position: fixed;
+
+    top: 30px;
+    left: 30px;
+
+    cursor: pointer;
+
+    padding: 20px;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.first__bar {
+
+    top: 8px;
+    transform: rotate(0);
+    transition: .5s transform linear, .2s top linear .5s;
+}
+
+.second__bar {
+
+    opacity: 1;
+    transition: .2s opacity linear .5s;
+}
+
+.third__bar {
+
+    top: -8px;
+    transform: rotate(0);
+    transition: .5s transform linear, .2s top linear .5s;
+}
+
+.burger-mark .first__bar {
+    top: 0;
+    transform: rotate(45deg);
+    transition: .2s top linear, .2s transform linear .2s;
+}
+
+.burger-mark .second__bar {
+    opacity: 0;
+    transition: .2s opacity linear;
+}
+
+.burger-mark .third__bar {
+    top: 0;
+    transform: rotate(-45deg);
+    transition: .2s top linear, .2s transform linear .2s;
+}
+
+@media (max-width: 1024px) {
+    .anim-disabled {
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
+
+    .menu {
+        left: 0px;
+        opacity: 0;
+        visibility: hidden;
+        animation: menuOut .5s linear;
+    }
+
+    @keyframes menuOut {
+        from {
+            left: 0px;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        to {
+            left: -300px;
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    .menu-hide {
+        opacity: 1;
+        visibility: visible;
+        animation: menuIn .5s linear;
+    }
+
+    @keyframes menuIn {
+        from {
+            left: -300px;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        to {
+            left: 0px;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .burger {
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+        animation: burgerAnimOut 0.5s linear;
+    }
+
+    .burger-anim-in {
+        left: 300px;
+        animation: burgerAnimIn 0.5s linear;
+    }
+
+
+    @keyframes burgerAnimIn {
+        from {
+            left: 0;
+        }
+
+        to {
+            left: 300px;
+        }
+    }
+
+
+
+    @keyframes burgerAnimOut {
+        from {
+            left: 300px;
+        }
+
+        to {
+            left: 0;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .anim-disabled {
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
+
+    .menu {
+        left: 0px;
+        opacity: 0;
+        visibility: hidden;
+        animation: menuOut .5s linear;
+    }
+
+    @keyframes menuOut {
+        from {
+            left: 0px;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        to {
+            left: -300px;
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    .menu-hide {
+        opacity: 1;
+        visibility: visible;
+        animation: menuIn .5s linear;
+    }
+
+    @keyframes menuIn {
+        from {
+            left: -300px;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        to {
+            left: 0px;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .burger {
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+        animation: burgerAnimOut 0.5s linear;
+    }
+
+    .burger-anim-in {
+        left: 300px;
+        animation: burgerAnimIn 0.5s linear;
+    }
+
+
+    @keyframes burgerAnimIn {
+        from {
+            left: 0;
+        }
+
+        to {
+            left: 300px;
+        }
+    }
+
+
+
+    @keyframes burgerAnimOut {
+        from {
+            left: 300px;
+        }
+
+        to {
+            left: 0;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .logo {
+        margin: 10px 40px 10px 40px;
+    }
+
+    .menu__adres {
+        display: none;
+    }
+
+    .ooo {
+        bottom: 5px;
+    }
+}
+
+@media (max-width: 823px) {
+    .logo {
+        margin: 10px 40px 10px 40px;
+    }
+
+    .menu__adres {
+        display: none;
+    }
+
+    .ooo {
+        bottom: 5px;
+    }
+}
+
+@media (max-width: 411px) {
+    .logo {
+        margin: 45px 40px 110px 40px;
+    }
+
+    .menu__adres {
+        display: block;
+    }
+
+    .ooo {
+        bottom: 40px;
+    }
+}

@@ -86,7 +86,7 @@ section {
 
     text-align: center;
 
-    margin: 40px 0 46px 0;
+    margin: 40px 0 6px 0;
 }
 
 .header__list {
@@ -164,7 +164,7 @@ section {
 }
 
 .number__item p {
-    font-size: 13px;
+    font-size: 15px;
 
     font-family: "Open Sans", sans-serif;
     text-align: center;
@@ -222,7 +222,7 @@ section {
 .of7,
 .of8,
 .of9 {
-     border-bottom: 0px;
+    border-bottom: 0px;
 }
 
 
@@ -248,3 +248,34 @@ section {
 }
 
 /*--------------------*/
+
+@media (max-width: 900px) {
+    section {
+        margin-left: 0px;
+    }
+
+    .header__list{
+        display: block;
+    }
+
+    .header__list__item{
+        margin: 20px 75px;
+    }
+
+    .offers__item{
+        flex-wrap: wrap;
+    }
+
+    .offer{
+        border: none;
+    }
+
+    .numbers__items{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .number__item{
+        margin: 20px;
+    }
+}

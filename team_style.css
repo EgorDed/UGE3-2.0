@@ -270,6 +270,7 @@ section {
     border: 2px solid #e8e9ed;
 
     margin-top: 40px;
+    margin-bottom: 40px;
     position: relative;
 }
 
@@ -330,6 +331,8 @@ section {
 
     margin-bottom: 30px;
 
+    width: 75%;
+
 }
 
 /*--------------------*/
@@ -371,16 +374,17 @@ section {
 /*--------------------*/
 
 /* Back */
-.back{
+.back {
     display: flex;
     justify-content: center;
     align-items: center;
 
     position: relative;
 
-    margin: 35px 0 40px 0 ;
+    margin: 35px 0 40px 0;
 }
-.back__img{
+
+.back__img {
     position: absolute;
     top: 0;
     left: 50%;
@@ -388,7 +392,7 @@ section {
     transform: translateX(-50%);
 }
 
-.beck__link {
+.back__link {
 
     margin: 45%;
     transform: translateY(50%);
@@ -398,7 +402,121 @@ section {
     font-size: 13px;
 }
 
-.gray{
+.gray {
     color: #707070;
 }
+
 /*--------------------*/
+@media (max-width: 1024px){
+    section {
+        margin-left: 0;
+    }
+}
+
+
+@media (max-width: 900px) {
+    section {
+        margin-left: 0;
+    }
+
+    .team {
+        flex-direction: column;
+    }
+
+    .center {
+        display: none;
+    }
+
+    .person__title {
+        margin: 0 0 0 16px;
+    }
+
+    #person_1,
+    #person_2,
+    #person_3,
+    #person_4,
+    #person_5,
+    #person_6,
+    #person_7,
+    #person_8,
+    #person_9 {
+        margin-bottom: 50px;
+    }
+
+    .person {
+        margin-left: 0;
+
+    }
+
+    .team-right {
+        margin-top: 0;
+    }
+}
+
+/*
+@media (max-width: 360px){
+    .person__info{
+        width: 100%;
+    }
+
+    .info__img{
+        display: none;
+    }
+
+    .contacts{
+        flex-direction: column;
+    }
+
+    .back{
+        display: none;
+    }
+}
+*/
+
+@media (max-width: 414px){
+    .person__info{
+        width: 100%;
+    }
+
+    .info__img{
+        display: none;
+    }
+
+    .contacts{
+        flex-direction: column;
+    }
+
+    .back{
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    .person__info{
+        width: 100%;
+    }
+
+    .info__img{
+        display: block;
+    }
+}
+
+@media (max-width: 823px){
+    .person__info{
+        width: 100%;
+    }
+
+    .info__title{
+        text-align: center;
+    }
+
+    .info__img{
+        display: none;
+    }
+}
+
+
+
+
+
+

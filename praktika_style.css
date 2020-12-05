@@ -61,7 +61,7 @@ h6 {
 
 /* Section */
 
-.section{
+.section {
     margin-left: 295px;
 
     display: flex;
@@ -71,7 +71,7 @@ h6 {
     justify-content: center;
 }
 
-.section__title{
+.section__title {
     text-align: center;
 
     padding-top: 45px;
@@ -83,7 +83,7 @@ h6 {
     font-size: 34px;
 }
 
-.section__items{
+.section__items {
     display: flex;
     flex-direction: row;
 
@@ -93,7 +93,7 @@ h6 {
     flex-wrap: wrap;
 }
 
-.section__item{
+.section__item {
     width: 275px;
     height: 295px;
 
@@ -107,7 +107,7 @@ h6 {
     position: relative;
 }
 
-.section__item:before{
+.section__item:before {
     width: 15px;
     height: 30px;
 
@@ -120,7 +120,7 @@ h6 {
     top: -3px;
 }
 
-.section__item:hover{
+.section__item:hover {
     background: #9da3ba;
 
     border: #9da3ba 3px solid;
@@ -130,34 +130,33 @@ h6 {
     color: #fff;
 }
 
-.section__item:hover:before{
+.section__item:hover:before {
     background: #353b50;
 }
 
-.item__text{
+.item__text {
     line-height: 1.4;
 }
 
-.item_img{
+.item_img {
     position: absolute;
     bottom: 25px;
     right: 25px;
 }
 
+.section__link {
+    color: #000;
+}
 
 /*--------------------*/
 
 
 
-
-
-
-
-
-
-
-
-
+@media (max-width: 900px){
+    .section{
+        margin-left: 0;
+    }
+}
 
 
 
